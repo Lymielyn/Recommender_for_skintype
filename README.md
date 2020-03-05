@@ -30,13 +30,15 @@ In order to recommend products solely based on their ingredients, I needed to to
 In the process of reducing the dimension of all the ingredients that I had tokenized, I have realised that PCA could not be conducted on binary data. Therefore, T-SNE was conducted instead as it is easier to find similar products in 2D and it will be visualised in Bokeh better.
 
 With NLP, I have found out the top frequently used ingredients in cosmetic products across all skin types. For each skin type, I have also included the top most used ingredients. 
-![Image description](images/most_used_ing)
+
+![Image description](images/most_used_ing.png)
 
 Bokeh was introduced to help visualise T-SNE. It provides an interactive way to show how T-SNE has clustered all products with similar ingredients. With this tool, we could look for similar products, their price, their ranks as well as their brand names.
 
 Lastly, a function with the Rake package from NLTK library was created to recommend top 10 products in the same category and similar ingredients. It is intended to help customers find the closest alternative products with the one they are currently using.
 
-![Image description](images/recommender)
+![Image description](images/recommender.png)
+
 ### Recommendations
 
 As this project was designed to aim at customers who already know their skin type or those who know what ingredients they want to look for in a product according to their skin type. It is recommended that a person should refer to this after finding out their own skin type.
